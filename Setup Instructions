@@ -1,0 +1,5 @@
+1. Clone the repository and upload the Colab notebook (`rag_qa_colab.ipynb`) to your Colab environment.
+2. Ensure you have API keys for Pinecone and Cohere (or OpenAI).
+3. Install required dependencies:
+   ```bash
+   !pip install pinecone-client cohere
