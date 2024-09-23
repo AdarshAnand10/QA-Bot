@@ -1,0 +1,6 @@
+```markdown
+1. Clone the repository.
+2. Build the Docker image:
+   ```bash
+   docker build -t qabot .
+docker run -p 8501:8501 qabot
