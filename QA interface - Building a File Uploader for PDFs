@@ -1,0 +1,10 @@
+import streamlit as st
+from PyPDF2 import PdfReader
+
+uploaded_file = st.file_uploader("Choose a PDF file")
+if uploaded_file:
+    reader = PdfReader(uploaded_file)
+    document = ""
+    for page in reader.pages:
+        document += page.extract_text()
+    st.write(document)
