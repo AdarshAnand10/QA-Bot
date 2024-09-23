@@ -1,0 +1,3 @@
+retrieved_text = " ".join([document_chunks[int(match['id'])] for match in results['matches']])
+response = co.generate(prompt=f"Based on the following context: {retrieved_text} \nAnswer: {query}")
+print(response.generations[0].text)
