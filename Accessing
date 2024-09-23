@@ -1,0 +1,7 @@
+Provide example interactions to show how the system works. Include screenshots of the Streamlit app and output from the Colab notebook.
+
+```markdown
+
+Query: "What is the main conclusion of the document?"
+
+Generated Answer:
