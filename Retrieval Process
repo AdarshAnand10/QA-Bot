@@ -1,0 +1,2 @@
+query_embedding = co.embed(["Your query here"])[0]
+results = index.query(query_embedding, top_k=5)
