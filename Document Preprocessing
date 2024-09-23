@@ -1,0 +1,7 @@
+import cohere
+co = cohere.Client('YOUR_API_KEY')
+
+document = "Your document text here..."
+document_chunks = [document[i:i+512] for i in range(0, len(document), 512)]
+
+embeddings = [co.embed([chunk]) for chunk in document_chunks]
