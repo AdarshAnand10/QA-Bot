@@ -1,0 +1,1 @@
+This project implements a QA bot using a Retrieval-Augmented Generation (RAG) model. The bot can answer user queries based on a provided document, leveraging a vector database for efficient retrieval and a generative model for response generation. The system is built using Cohere for embeddings and Pinecone for retrieval, with a user-friendly interface built using Streamlit.
