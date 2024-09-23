@@ -1,0 +1,7 @@
+query = st.text_input("Ask a question about the document")
+if query:
+    query_embedding = co.embed([query])[0]
+    results = index.query(query_embedding, top_k=5)
+    retrieved_text = " ".join([document_chunks[int(match['id'])] for match in results['matches']])
+    response = co.generate(prompt=f"Based on the following context: {retrieved_text} \nAnswer: {query}")
+    st.write(response.generations[0].text)
