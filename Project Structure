@@ -1,0 +1,10 @@
+|-- notebooks/
+|   |-- rag_qa_colab.ipynb      
+|-- app/
+|   |-- app.py                  
+|   |-- embeddings.py           
+|   |-- retrieval.py            
+|   |-- generate.py             
+|-- docker/
+|   |-- Dockerfile              
+|-- README.md                   
